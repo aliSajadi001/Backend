@@ -1,4 +1,4 @@
-const { Origins } = require('../corsConfig/Origin');
+let Origins = require('../corsConfig/Origin');
 
 let withCredentials = (req, res, next) => {
   let origin = req.headers.origin;

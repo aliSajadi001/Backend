@@ -18,8 +18,8 @@ let Register = async (req, res) => {
 
       let hash = await bcryptjs.hash(password, 10);
 
-      let createRandomCode = Math.floor(
-        10000000 + Math.random() * 99999999
+      let createRandomCode =  Math.floor(10000000 +
+        Math.random() * 90000000
       ).toString();
 
       let newUser = await new userModel({
